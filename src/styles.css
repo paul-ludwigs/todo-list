@@ -1,9 +1,35 @@
+body {
+    background-color: gray;
+    color: #333;
+}
+.drag-container {
+    margin-right: 1rem;
+    border: 0.3em solid #333;
+}
+
 h1 {
     text-align: center;
     margin-top: 2rem;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 4rem;
+}
+h2 {
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.header {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
 }
 main {
-    margin-top: 6em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2em;
+    background-color: grey;
 }
 .main-container {
     background-color: blue;
@@ -13,26 +39,41 @@ main {
     align-self: baseline;
 }
 .todo {
-    background-color: green;
+    background-color: rgb(34,139,34)	;
+
 }
 .inprogress {
-    background-color: yellow;
+    background-color: rgb(255,215,0)	;
 }
 .finished {
-    background-color: red;
+    background-color: rgb(220,20,60)	;
 }
 
 .item-list {
     text-align: center;
     height: 30rem;
     margin-top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    justify-content: space-between;
+
 }
 .item-input {
     justify-content: center;
 }
 .list-item {
-    background-color: aqua;
+    display: flex;
+    background-color: white;
     cursor: move;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+    border: 0.1rem solid #333;
+}
+.list-item button {
+    float: right;
 }
 
 .bi-plus-circle
@@ -47,4 +88,18 @@ main {
 ul {
     width: 100%;
     height: 100%;
+}
+
+.form-check-label {
+    word-wrap:break-word !important;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-button {
+    padding-left: .5em;
 }
